@@ -27,7 +27,7 @@ env:
 jobs:
   modified-containers:
     name: Modified containers
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, 1ES.Pool=gha-pool]
     outputs:
       containers: ${{ steps.matrix.outputs.containers }}
     steps:
